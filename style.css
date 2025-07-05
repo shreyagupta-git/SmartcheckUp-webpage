@@ -1,0 +1,165 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffffff;
+  color: #1f2a44;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f2a44;
+  color: white;
+  padding: 1rem 2rem;
+  flex-wrap:wrap;
+}
+.logo{
+    height:3rem;
+    width:4rem;
+    display:flex;
+}
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color:#ccc
+
+}
+nav{
+    display:fllex;
+    gap:1.5rem;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+  background: #e8f0fc;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #1f2a44;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.hero-img  img {
+ margin-top:4rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+.features, .pricing, .testimonials, .newsletter {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.feature-cards, .pricing-cards, .testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #f9fbff;
+  border: 1px solid #dfe4ea;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 300px;
+  text-align: center;
+}
+
+.newsletter form {
+  margin-top: 1rem;
+}
+
+.newsletter input {
+  padding: 0.5rem;
+  width: 250px;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  padding: 0.5rem 1rem;
+  background: #1f2a44;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+footer {
+  background: #1f2a44;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #d1d9e6;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .feature-cards, .pricing-cards, .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  nav{
+    display: none;
+    flex-direction: column;
+    width:100%;
+    position: absolute;
+    top: 100%;
+    z-index:1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
