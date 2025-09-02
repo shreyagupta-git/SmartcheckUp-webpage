@@ -1,7 +1,4 @@
-// script.js
 
-
-// Newsletter form submission
 document.getElementById("subscribeForm").addEventListener("submit", function (e) {
   e.preventDefault();
   const emailInput = this.querySelector("input[type='email']");
